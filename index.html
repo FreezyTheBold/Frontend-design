@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results Summary Component</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+     <div class="result-card">
+      <header>
+        <h1>Your Result</h1>
+        <div class="score-circle">
+          <p class="score-number">76</p>
+          <p class="out-of">of 100</p>
+        </div>
+        <p class="result-status">Great</p>
+        <p class="result-comment">You scored higher than 65% of the people who have taken these tests.</p>
+      </header>
+    </div>
+
+    <!-- Summary Section -->
+    <section class="summary-card">
+      <h2>Summary</h2>
+      <ul class="summary-list">
+        <li class="summary-item reaction">
+            <span class="label">⚡ Reaction</span>
+            <span class="score-value">80 <span class="max">/ 100</span></span>
+          </li>
+        <li class="summary-item memory">
+          <span class="label">🧠  Memory</span>
+          <span class="score-value">92 <span class="max">/ 100</span></span>
+        </li>
+        <li class="summary-item verbal">
+          <span class="label">💬  Verbal</span>
+          <span class="score-value">61 <span class="max">/ 100</span></span>
+        </li>
+        <li class="summary-item visual">
+          <span class="label">👁️  Visual</span>
+          <span class="score-value">72 <span class="max">/ 100</span></span>
+        </li>
+      </ul>
+      <button class="continue-btn">Continue</button>
+    </section>
+    <!-- Footer Section -->   
+  </div>
+</body>
+</html>

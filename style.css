@@ -1,0 +1,233 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/* Global Styles */
+body {
+  background-color: hsl(221, 100%, 96%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+header {
+  background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%)); /* Gradient background */
+  color: white;
+  padding: 50px;
+  border-radius: 15px;
+  text-align: center;
+ 
+}
+
+.score-circle {
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1rem;
+}
+
+.score-number {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.out-of {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.result-status {
+  font-size: 18px;
+  color: hsl(0, 0%, 100%);
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+header p {
+  color: hsl(221, 100%, 96%);
+  margin: 10px 0 0;
+}
+
+.result-status {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.result-comment {
+  font-size: 14px;
+  font-weight: 100;
+  opacity: 0.8;
+}
+
+/* Summary Section */
+.summary-card {
+  padding:  2rem;
+}
+.summary h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.summary-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  margin-bottom: 0.6rem;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.reaction {
+  color: hsl(0, 100%, 67%);
+  background: hsla(0, 100%, 67%, 0.1);
+}
+
+.memory {
+  color: hsl(39, 100%, 56%);
+  background: hsla(39, 100%, 56%, 0.1);
+}
+
+.verbal {
+  color: hsl(166, 100%, 37%);
+  background: hsla(166, 100%, 37%, 0.1);
+}
+
+.visual {
+  color: hsl(234, 85%, 45%);
+  background: hsla(234, 85%, 45%, 0.1);
+}
+
+.score-value {
+  font-weight: bold;
+  color:   hsl(224, 30%, 27%);
+}
+
+.max {
+  opacity: 0.5;
+  font-weight: normal;
+}
+
+.score {
+  font-weight: 500;
+  font-size: 3rem;
+  color: hsl(224, 30%, 27%);
+}
+
+/* Button */
+.continue-btn {
+  display: block;
+  width: 100%;
+  margin: 1rem auto 0;
+  background: hsl(224, 30%, 27%);
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.continue-btn:hover {
+  background: hsl(241, 81%, 54%);
+}
+
+/* Footer Section 
+footer {
+  margin-bottom: 2rem;
+  padding-left: 12%;
+  font-size: 0.8rem;
+  color: hsl(224, 30%, 27%);
+}
+
+footer a {
+  color: hsl(252, 100%, 67%);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+  */
+
+/* Responsive Design */
+
+/* Default style for mobile (375px) */
+/* Responsive Design */
+
+/* Default style for mobile (375px) */
+.container {
+  flex-direction: column;
+  width: 100%; /* Makes it more flexible */
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+/* Media query for desktop (1440px) */
+@media (min-width: 768px) { /* Adjust to mid-size screens as well */
+  .container {
+    flex-direction: row;
+    width: 100%; /* Takes up 90% of the screen width */
+    max-width: 900px; /* Limit maximum width */
+    margin: 0 auto; /* Centers the container */
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    flex-direction: row;
+    width: 50%; /* Adjust to a reasonable width */
+    max-width: 1200px; /* Ensures it doesn't stretch too far */
+    margin: 0 auto; /* Centers the container */
+  }
+}
+
+
+
+  .results-card,
+  .summary-card {
+      width: 100%;
+  }
+
+  .results-card {
+    border-radius: 20px 0 0 20px;
+}
+  
+  .score-number {
+    font-size: 2rem;
+  }
+
+  .summary-card {
+    border-radius: 0 20px 20px 0;
+}
+
+ 
